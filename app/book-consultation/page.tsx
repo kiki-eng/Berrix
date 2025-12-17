@@ -29,9 +29,24 @@ export default function BookConsultationPage() {
   });
 
   const onQuickSubmit = async (data: QuickFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/consultation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit consultation request");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting your request. Please try again or contact us directly.");
+    }
   };
 
   if (isSubmitted) {
