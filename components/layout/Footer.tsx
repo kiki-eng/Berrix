@@ -13,7 +13,10 @@ export default function Footer() {
                 <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.1)_50%,transparent_70%)] bg-[length:200%_200%] animate-[shimmer_3s_infinite]" />
                 <Code className="w-6 h-6 text-primary-foreground relative z-10" strokeWidth={2.5} />
               </div>
-              <h3 className="text-lg font-bold tracking-tight bg-gradient-to-r from-foreground via-emerald-400 to-primary bg-clip-text text-transparent">Berrix</h3>
+              <div className="flex flex-col">
+                <h3 className="text-lg font-bold tracking-tight bg-gradient-to-r from-foreground via-emerald-400 to-primary bg-clip-text text-transparent leading-tight">Berrix</h3>
+                <span className="text-xs font-medium tracking-wide text-muted-foreground/80 leading-tight">Software Solution</span>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
               Building scalable software solutions for modern businesses.

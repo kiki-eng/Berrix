@@ -74,22 +74,27 @@ export default function Header() {
             </div>
             
             {/* Premium Logo Text with multiple effects */}
-            <div className="relative">
+            <div className="relative flex flex-col">
               {/* Main text with gradient */}
-              <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent group-hover:from-primary group-hover:via-primary group-hover:to-primary/80 transition-all duration-500 relative z-10 drop-shadow-sm">
+              <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent group-hover:from-primary group-hover:via-primary group-hover:to-primary/80 transition-all duration-500 relative z-10 drop-shadow-sm leading-tight">
                 Berrix
+              </span>
+              
+              {/* Subtitle - Software Solution */}
+              <span className="text-xs font-medium tracking-wide text-muted-foreground/80 group-hover:text-primary/70 transition-colors duration-500 leading-tight mt-0.5">
+                Software Solution
               </span>
               
               {/* Animated gradient underline */}
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary via-primary/80 to-primary/50 group-hover:w-full transition-all duration-500 rounded-full shadow-sm shadow-primary/50" />
               
               {/* Text glow effect behind with multi-green */}
-              <span className="absolute inset-0 text-xl font-bold tracking-tight bg-gradient-to-r from-primary/50 via-emerald-500/40 to-teal-400/50 bg-clip-text text-transparent blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <span className="absolute inset-0 text-xl font-bold tracking-tight bg-gradient-to-r from-primary/50 via-emerald-500/40 to-teal-400/50 bg-clip-text text-transparent blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-tight">
                 Berrix
               </span>
               
               {/* Subtle text shadow with green */}
-              <span className="absolute inset-0 text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-500/20 via-primary/20 to-teal-400/20 blur-sm opacity-0 group-hover:opacity-50 transition-opacity duration-500">
+              <span className="absolute inset-0 text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-500/20 via-primary/20 to-teal-400/20 blur-sm opacity-0 group-hover:opacity-50 transition-opacity duration-500 leading-tight">
                 Berrix
               </span>
             </div>
