@@ -6,6 +6,7 @@ import {
   Shield, 
   Zap, 
   BarChart3,
+  ShieldCheck,
 } from "lucide-react";
 
 // Service icon mappings
@@ -16,5 +17,6 @@ export const serviceIcons: Record<string, LucideIcon> = {
   "identity-access": Shield,
   "automation-ai": Zap,
   "data-bi": BarChart3,
+  "data-governance-security": ShieldCheck,
 };
 

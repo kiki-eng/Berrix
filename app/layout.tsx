@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Berrix Software Solutions | Building Scalable Software Solutions",
-  description: "Custom applications, Azure cloud, automation, and AI — designed to solve real business problems.",
+  description: "Custom applications, Azure cloud, automation, and AI designed to solve real business problems.",
 };
 
 export default function RootLayout({

@@ -176,6 +176,40 @@ export const services: Service[] = [
       "Azure Data Lake Storage",
       "Python, Spark, dbt"
     ]
+  },
+  {
+    id: "data-governance-security",
+    title: "Data Governance & Security",
+    slug: "data-governance-security",
+    shortDescription: "Comprehensive security and governance frameworks to protect your data and ensure compliance.",
+    description: "We implement enterprise-grade data governance and security solutions to protect your sensitive information, ensure regulatory compliance, and build trust with your customers. From security audits to ongoing monitoring, we make security a core part of your technology infrastructure.",
+    problems: [
+      "Data breaches pose significant business risk",
+      "Compliance requirements are complex and evolving",
+      "You lack visibility into data access and usage",
+      "Security policies are inconsistently applied",
+      "You need to protect sensitive customer data",
+      "Regulatory requirements demand robust data governance"
+    ],
+    deliverables: [
+      "Security assessment and audit",
+      "Data governance framework and policies",
+      "Access controls and encryption implementation",
+      "Compliance documentation (GDPR, HIPAA, SOC 2, etc.)",
+      "Security monitoring and alerting systems",
+      "Incident response plans and procedures",
+      "Security training and awareness programs",
+      "Ongoing security monitoring and maintenance"
+    ],
+    tools: [
+      "Azure Key Vault, Azure Security Center",
+      "Microsoft Purview, Azure Information Protection",
+      "Azure Sentinel, Azure Defender",
+      "Azure Policy, Azure Blueprints",
+      "Microsoft 365 Security & Compliance",
+      "Data Loss Prevention (DLP) tools",
+      "Identity and Access Management (IAM) systems"
+    ]
   }
 ];
 

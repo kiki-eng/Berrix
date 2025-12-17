@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { services } from "@/lib/services";
-import { ArrowRight, CheckCircle2, Code, Cloud, Zap, Shield, Calendar, Target, Rocket, TrendingUp, Users, Lock, ArrowUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, Code, Cloud, Zap, Shield, Calendar, Target, Rocket, TrendingUp, Users, Lock, ArrowUp, ShieldCheck } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { StaggerChildren, StaggerItem } from "@/components/animations/StaggerChildren";
 import ScrollToHash from "@/components/ScrollToHash";
@@ -62,7 +62,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg text-muted-foreground sm:text-xl max-w-xl leading-relaxed mb-10">
-              Custom applications, <span className="text-emerald-400 font-medium">Azure cloud</span>, <span className="text-teal-400 font-medium">automation</span>, and <span className="text-primary font-medium">AI</span> designed to solve real business problems.
+              Custom applications, <span className="text-emerald-400 font-medium">Azure cloud</span>, <span className="text-teal-400 font-medium">automation</span>, <span className="text-primary font-medium">AI</span>, and <span className="text-emerald-400 font-semibold">enterprise-grade security</span> designed to solve real business problems with <span className="text-teal-400 font-semibold">complete data protection</span>.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg" className="shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-emerald-500/40 transition-all hover:scale-105 bg-gradient-to-r from-primary via-emerald-500 to-primary hover:from-primary hover:via-emerald-500 hover:to-teal-400">
@@ -181,7 +181,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Comprehensive solutions to help your business grow and scale.
+              Comprehensive solutions with <span className="text-emerald-400 font-semibold">enterprise-grade security</span> to help your business grow and scale.
             </p>
           </FadeIn>
           <StaggerChildren className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -249,7 +249,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              At <span className="text-primary font-semibold">Berrix</span>, we combine <span className="text-emerald-400 font-medium">senior-level engineering expertise</span> with <span className="text-teal-400 font-medium">Azure-first architecture</span> to deliver custom software solutions that solve real business problems. We&apos;re not just developers—we&apos;re your <span className="text-primary font-medium">long-term technology partners</span>, committed to building systems that <span className="text-emerald-400 font-medium">scale</span>, <span className="text-teal-400 font-medium">secure</span>, and support your growth.
+              At <span className="text-primary font-semibold">Berrix</span>, we combine <span className="text-emerald-400 font-medium">senior-level engineering expertise</span> with <span className="text-teal-400 font-medium">Azure-first architecture</span> and <span className="text-emerald-400 font-semibold">security-first design</span> to deliver custom software solutions that solve real business problems. We&apos;re not just developers, we&apos;re your <span className="text-primary font-medium">long-term technology partners</span>, committed to building systems that are <span className="text-emerald-400 font-semibold">secure by default</span>, <span className="text-teal-400 font-medium">scalable</span>, and support your growth.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all">
               <Link href="/#why-berrix">Learn more about us</Link>
@@ -386,31 +386,72 @@ export default function Home() {
               What sets us apart in delivering <span className="text-emerald-400 font-medium">software solutions</span>.
             </p>
           </FadeIn>
+          
+          {/* Company Introduction */}
+          <FadeIn delay={0.1} className="mb-16">
+            <Card className="border-2 border-primary/20 bg-gradient-to-br from-background via-muted/10 to-background p-8 md:p-12 relative overflow-hidden">
+              {/* Decorative background elements */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-emerald-500/5 pointer-events-none" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
+                    <Users className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-foreground via-emerald-400 to-primary bg-clip-text text-transparent">
+                    About Berrix
+                  </h3>
+                </div>
+                <div className="space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+                  <p>
+                    <span className="text-foreground font-semibold">Berrix Consulting</span> is a <span className="text-emerald-400 font-medium">US-based software solution company</span> with over <span className="text-primary font-bold">a decade of experience</span> delivering <span className="text-teal-400 font-medium">reliable, custom-built technology solutions</span>. We partner with businesses to design and implement <span className="text-emerald-400 font-medium">scalable systems</span>, from <span className="text-primary font-medium">enterprise applications</span> and <span className="text-teal-400 font-medium">cloud infrastructure</span> to <span className="text-emerald-400 font-medium">automation platforms</span> and <span className="text-primary font-medium">AI-powered solutions</span>.
+                  </p>
+                  <p>
+                    As a <span className="text-primary font-semibold">registered Limited Liability Company (LLC) in the United States</span>, Berrix operates with <span className="text-emerald-400 font-medium">full legal compliance</span>, <span className="text-teal-400 font-medium">professional accountability</span>, and <span className="text-primary font-medium">industry best practices</span>. Our clients work with a <span className="text-emerald-400 font-semibold">legitimate, established technology partner</span>, not a freelance brand or short-term operation.
+                  </p>
+                  <p>
+                    Our team specializes in <span className="text-teal-400 font-medium">custom software solutions</span>, <span className="text-emerald-400 font-medium">Microsoft Azure cloud solutions</span>, <span className="text-primary font-medium">DevOps engineering</span>, <span className="text-teal-400 font-medium">identity and access management (IAM)</span>, <span className="text-emerald-400 font-medium">automation and AI</span>, <span className="text-primary font-medium">data & business intelligence</span>, and <span className="text-emerald-400 font-semibold">data governance & security</span>. Every solution we build is driven by <span className="text-emerald-400 font-medium">real business requirements</span>, engineered with <span className="text-teal-400 font-semibold">security-first architecture</span> and <span className="text-primary font-semibold">enterprise-grade protection</span>, and focused on delivering <span className="text-primary font-medium">measurable, long-term value</span>.
+                  </p>
+                  <p>
+                    We take pride in <span className="text-emerald-400 font-medium">transparent communication</span>, <span className="text-teal-400 font-medium">dependable delivery</span>, and building <span className="text-primary font-semibold">lasting partnerships</span> with organizations across multiple industries.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </FadeIn>
+          
           <StaggerChildren className="grid gap-4 md:grid-cols-2">
             {[
               {
+                title: "Enterprise-grade security",
+                description: "Security is built into every solution from day one. We implement comprehensive data protection, access controls, encryption, and compliance frameworks to keep your data safe.",
+                icon: Shield
+              },
+              {
                 title: "Senior-level engineering experience",
-                description: "Our team brings years of experience building production systems at scale.",
+                description: "Our team brings years of experience building production systems at scale with security and reliability as core principles.",
                 icon: Users
               },
               {
                 title: "Azure-first architecture",
-                description: "We leverage Microsoft Azure's full capabilities for scalable, secure solutions.",
+                description: "We leverage Microsoft Azure's full security capabilities for scalable, secure, and compliant solutions.",
                 icon: Cloud
               },
               {
-                title: "Security by design",
-                description: "Security and compliance are built into every solution from the ground up.",
-                icon: Shield
+                title: "Data governance & compliance",
+                description: "We help you meet regulatory requirements (GDPR, HIPAA, SOC 2) and implement robust data governance frameworks.",
+                icon: Lock
               },
               {
                 title: "Scalable, maintainable systems",
-                description: "We build systems that grow with your business and are easy to maintain.",
+                description: "We build secure systems that grow with your business and are easy to maintain and monitor.",
                 icon: Code
               },
               {
                 title: "Long-term partnership mindset",
-                description: "We're invested in your success for the long haul, not just the initial project.",
+                description: "We're invested in your success for the long haul, providing ongoing security monitoring and support.",
                 icon: Users
               }
             ].map((item) => {
