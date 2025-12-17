@@ -249,7 +249,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              At <span className="text-primary font-semibold">Berrix</span>, we combine <span className="text-emerald-400 font-medium">senior-level engineering expertise</span> with <span className="text-teal-400 font-medium">Azure-first architecture</span> to deliver custom software solutions that solve real business problems. We're not just developers—we're your <span className="text-primary font-medium">long-term technology partners</span>, committed to building systems that <span className="text-emerald-400 font-medium">scale</span>, <span className="text-teal-400 font-medium">secure</span>, and support your growth.
+              At <span className="text-primary font-semibold">Berrix</span>, we combine <span className="text-emerald-400 font-medium">senior-level engineering expertise</span> with <span className="text-teal-400 font-medium">Azure-first architecture</span> to deliver custom software solutions that solve real business problems. We&apos;re not just developers—we&apos;re your <span className="text-primary font-medium">long-term technology partners</span>, committed to building systems that <span className="text-emerald-400 font-medium">scale</span>, <span className="text-teal-400 font-medium">secure</span>, and support your growth.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all">
               <Link href="/#why-berrix">Learn more about us</Link>

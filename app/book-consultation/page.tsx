@@ -107,7 +107,7 @@ export default function BookConsultationPage() {
             Book a Consultation
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose how you'd like to book your consultation.
+            Choose how you&apos;d like to book your consultation.
           </p>
         </div>
 
@@ -145,7 +145,7 @@ export default function BookConsultationPage() {
                 Quick Consultation
               </CardTitle>
               <CardDescription>
-                Fast and simple - just fill out the form and we'll get back to you.
+                Fast and simple - just fill out the form and we&apos;ll get back to you.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -380,7 +380,7 @@ export default function BookConsultationPage() {
               <div className="mb-6 text-center">
                 <h2 className="text-3xl font-bold tracking-tight mb-2">Free Consultations</h2>
                 <p className="text-muted-foreground">
-                  Tell us about your business needs and we'll get back to you.
+                  Tell us about your business needs and we&apos;ll get back to you.
                 </p>
               </div>
               <form onSubmit={quickForm.handleSubmit(onQuickSubmit)} className="space-y-6">

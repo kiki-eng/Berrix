@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getServiceBySlug } from "@/lib/services";
 import { CheckCircle2, AlertCircle, Package, Wrench } from "lucide-react";
 import { serviceIcons } from "@/lib/service-icons";
