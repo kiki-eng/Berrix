@@ -16,13 +16,6 @@ export async function POST(request: NextRequest) {
     // Get your email from environment variable
     const recipientEmail = process.env.CONSULTATION_EMAIL || "your-email@example.com";
     
-    // Log configuration (for debugging - remove sensitive data in production)
-    console.log("Email configuration:", {
-      hasResendKey: !!process.env.RESEND_API_KEY,
-      recipientEmail: recipientEmail,
-      fromEmail: process.env.RESEND_FROM_EMAIL || "Berrix <onboarding@resend.dev>",
-    });
-    
     // Email subject
     const subject = `New Consultation Request from ${name} - ${company || "No Company"}`;
 
@@ -94,24 +87,11 @@ export async function POST(request: NextRequest) {
         }),
       });
 
-      const resendData = await resendResponse.json();
-
       if (!resendResponse.ok) {
-        console.error("Resend API error:", {
-          status: resendResponse.status,
-          statusText: resendResponse.statusText,
-          error: resendData,
-          recipientEmail: recipientEmail,
-          fromEmail: process.env.RESEND_FROM_EMAIL,
-        });
-        throw new Error(`Failed to send email via Resend: ${JSON.stringify(resendData)}`);
+        const error = await resendResponse.json();
+        console.error("Resend error:", error);
+        throw new Error("Failed to send email via Resend");
       }
-
-      console.log("Email sent successfully:", {
-        emailId: resendData.id,
-        to: recipientEmail,
-        from: process.env.RESEND_FROM_EMAIL,
-      });
 
       return NextResponse.json(
         { message: "Consultation request submitted successfully" },

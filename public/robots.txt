@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://berrixsoftwaresolution.com/sitemap.xml
+
+# Disallow admin or private areas if you have any
+# Disallow: /admin/
+# Disallow: /api/

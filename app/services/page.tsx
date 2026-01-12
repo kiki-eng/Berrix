@@ -3,6 +3,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { services } from "@/lib/services";
 import { ArrowRight } from "lucide-react";
 import { serviceIcons } from "@/lib/service-icons";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services | Custom Software Development & Cloud Solutions",
+  description: "Comprehensive software solutions including custom development, Azure cloud consulting, DevOps services, AI solutions, and automation. Explore all Berrix services.",
+  openGraph: {
+    title: "Our Services | Berrix Software Solutions",
+    description: "Comprehensive solutions to help your business grow and scale with modern technology.",
+    url: "https://berrixsoftwaresolution.com/services",
+  },
+  alternates: {
+    canonical: "https://berrixsoftwaresolution.com/services",
+  },
+};
 
 export default function ServicesPage() {
   return (
