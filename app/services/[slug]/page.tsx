@@ -5,34 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { getServiceBySlug } from "@/lib/services";
 import { CheckCircle2, AlertCircle, Package, Wrench } from "lucide-react";
 import { serviceIcons } from "@/lib/service-icons";
-import type { Metadata } from "next";
 
 interface ServicePageProps {
   params: {
     slug: string;
-  };
-}
-
-export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
-  const service = getServiceBySlug(params.slug);
-  
-  if (!service) {
-    return {
-      title: "Service Not Found",
-    };
-  }
-
-  return {
-    title: `${service.title} | Berrix Software Solutions`,
-    description: service.description,
-    openGraph: {
-      title: `${service.title} | Berrix Software Solutions`,
-      description: service.description,
-      url: `https://berrixsoftwaresolution.com/services/${params.slug}`,
-    },
-    alternates: {
-      canonical: `https://berrixsoftwaresolution.com/services/${params.slug}`,
-    },
   };
 }
 

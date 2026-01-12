@@ -42,6 +42,15 @@ export default function BookConsultationPage() {
         throw new Error("Failed to submit consultation request");
       }
 
+      // Track Google Ads conversion
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "conversion", {
+          send_to: "AW-17870471623",
+          value: 1.0,
+          currency: "CAD",
+        });
+      }
+
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting form:", error);

@@ -1,0 +1,35 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded rectangle background -->
+  <rect width="400" height="400" rx="40" fill="url(#bgGradient)"/>
+  
+  <!-- Code icon (simplified) -->
+  <g transform="translate(150, 120)">
+    <!-- Left bracket -->
+    <path d="M 20 40 L 0 60 L 20 80" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right bracket -->
+    <path d="M 80 40 L 100 60 L 80 80" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Code lines -->
+    <line x1="30" y1="50" x2="70" y2="50" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    <line x1="35" y1="70" x2="65" y2="70" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Berrix text -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#textGradient)" text-anchor="middle">Berrix</text>
+  
+  <!-- Software Solution text -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">Software Solution</text>
+</svg>

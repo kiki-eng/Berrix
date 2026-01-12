@@ -7,55 +7,10 @@ import { FadeIn } from "@/components/animations/FadeIn";
 import { StaggerChildren, StaggerItem } from "@/components/animations/StaggerChildren";
 import ScrollToHash from "@/components/ScrollToHash";
 import { serviceIcons } from "@/lib/service-icons";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Custom Software Development & Azure Cloud Consulting",
-  description: "Berrix Software Solutions provides custom software development, Azure cloud architecture, DevOps services, and AI-powered solutions. US-based software consulting with 10+ years of experience.",
-  openGraph: {
-    title: "Berrix Software Solutions | Custom Software Development & Azure Consulting",
-    description: "Custom applications, Azure cloud, automation, and AI designed to solve real business problems.",
-    url: "https://berrixsoftwaresolution.com",
-  },
-};
 
 export default function Home() {
-  // Structured Data (JSON-LD) for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Berrix Software Solutions",
-    "url": "https://berrixsoftwaresolution.com",
-    "logo": "https://berrixsoftwaresolution.com/logo.png",
-    "description": "Custom software development, Azure cloud consulting, and DevOps services",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      // Add your social media links here when available
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Service",
-      "email": "abosedekikelomo408@gmail.com"
-    },
-    "areaServed": "US",
-    "serviceType": [
-      "Custom Software Development",
-      "Azure Cloud Consulting",
-      "DevOps Services",
-      "AI Solutions",
-      "Automation Services"
-    ]
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       <ScrollToHash />
       {/* Hero Section - Dark Theme */}
       <section className="relative container py-24 md:py-32 overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-b from-background via-background to-background">
